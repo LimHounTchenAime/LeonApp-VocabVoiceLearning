@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leon App</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Leon</h1>
+      <h3>Apprendre du vocabulaire en s'amusant !</h3>
+    </header>
+
+    <div id="sets">
+      <div class="page-head">
+        <div></div>
+        <h2>Séries :</h2>
+      </div>
+      <div id="set-selector" class="center">
+        <a href="#learn" class="button">Animaux</a>
+        <a href="#learn" class="button">Fruits</a>
+      </div>
+
+    </div>
+
+    <div id="learn">
+      <div class="page-head">
+        <div>
+          <a href="#sets" class="button">Retour aux séries</a>
+        </div>
+        <h2>Apprentissage</h2>
+        <div class="right">
+          <a href="#game" class="button">Jouer ⨠</a>
+        </div>
+      </div>
+      <h4>Cliquez pour écouter : </h4>
+      <div class="grid-container"></div>
+      <div class="right">
+
+      </div>
+    </div>
+
+    <div id="game">
+      <div class="page-head">
+        <div>
+          <a href="#sets" class="button">Retour aux séries</a>
+        </div>
+        <h2>Jeu</h2>
+      </div>
+      <div class="inline center">
+        <b>Cliquez sur les images correspondantes : </b>
+        <button class="button play-button">🔁Réécouter</button>
+      </div>
+      <div class="grid-container"></div>
+    </div>
+
+    <div id="result">
+      <div class="page-head">
+        <div></div>
+        <h2>Gagné !</h2>
+      </div>
+      <div class="center">
+        <p>Vous avez trouvé <span class="score"></span> images sur <span class="total"></span> du premier coup.</p>
+        <br>
+        <a href="#learn" class="button">Retour à l'apprentissage</a>
+        <a href="#sets" class="button">Voir d'autres séries ⨠</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+
+<!--<div class="set">-->
+<!--  <h3>Les animaux</h3>-->
+<!--  <p>Apprenez les noms des animaux.</p>-->
+<!--  &lt;!&ndash;          <img src="./img/animals.jpg" alt="Les animaux">&ndash;&gt;-->
+<!--</div>-->
+<!--<div class="set">-->
+<!--  <h3>Les fruits</h3>-->
+<!--  <p>Apprenez les noms des fruits.</p>-->
+<!--  &lt;!&ndash;          <img src="./img/fruits.jpg" alt="Les fruits">&ndash;&gt;-->
+<!--</div>-->
