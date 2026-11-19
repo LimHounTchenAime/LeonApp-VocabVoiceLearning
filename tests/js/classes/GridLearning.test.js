@@ -2,6 +2,12 @@ const { JSDOM } = require('jsdom');
 const { GridLearning } = require('../../../src/js/elements/gameGrid/GridLearning.js');
 
 describe('GridLearning', () => {
+  beforeEach(() => {
+    // jsdom does not implement the Web Speech API used by Speecher
+    global.window = { speechSynthesis: { getVoices: () => [], speak: () => {} } };
+    global.SpeechSynthesisUtterance = class {};
+  });
+
   test('constructor', () => {
     const dom = new JSDOM(`<!DOCTYPE html><div id="parent"></div>`);
     global.document = dom.window.document;
