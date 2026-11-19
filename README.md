@@ -1,4 +1,7 @@
 # Projet multimédia (Leon App)
+
+![CI](https://github.com/LimHounTchenAime/LeonApp-VocabVoiceLearning/actions/workflows/ci.yml/badge.svg)
+
 - Hugo COLLIN
 - Aimé LIM HOUN TCHEN
 
